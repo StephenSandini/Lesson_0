@@ -8,7 +8,7 @@
 const buttonHome = document.getElementById('button-home');
 const buttonProfile = document.getElementById('button-profile');
 const buttonSignout = document.getElementById('button-signout');
-
+const rootTag = document.getElementById('root');
 //---------------------------------------------------------------------
 //              EVENT LISTENERS
 //---------------------------------------------------------------------
@@ -31,12 +31,11 @@ buttonSignout.addEventListener('click', functionSignout);
 //---------------------------------------------------------------------
 
 function functionHome(){ 
-    console.log('Home button is clicked');
-    
+    rootTag.innerHTML = 'Home Page';    
 }
 
 function functionProfile(){
-    console.log('Profile button is clicked');
+    rootTag.innerHTML = 'Profile Page';
 }
 
 function functionSignout(){
